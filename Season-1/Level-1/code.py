@@ -28,6 +28,6 @@ def validorder(order: Order):
             return "Invalid item type: %s" % item.type
 
     if net != 0:
-        return "Order ID: %s - Payment imbalance: $%0.2f" % (order.id, net)
+        return "Order ID: %s - Payment imbalance: $%0.2d" % (order.id, net)
     else:
         return "Order ID: %s - Full payment received!" % order.id
